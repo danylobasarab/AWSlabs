@@ -1,5 +1,5 @@
-CREATE DATABASE IF NOT EXISTS pavlo_turchynyak;
-USE pavlo_turchynyak;
+CREATE DATABASE IF NOT EXISTS danylo_basarab;
+USE danylo_basarab;
 
 DROP TABLE IF EXISTS establishment_review_of_establishment;
 DROP TABLE IF EXISTS establishment;
@@ -116,7 +116,7 @@ ALTER TABLE user_account ADD CONSTRAINT user_account_credential FOREIGN KEY user
     REFERENCES credential (id);
 
 INSERT INTO information_about_owner(id, name, surname, age, fortunes) VALUES
-(1, 'Pavlo', 'Turchynyak', 35, 15000),
+(1, 'Danylo', 'Basarab', 35, 15000),
 (2, 'Oleg', 'Kiruch', 40, 300000),
 (3, 'Igor', 'Vilkov', 25, 250000),
 (4, 'Marko', 'Yaminskyy', 45, 85000),
@@ -158,7 +158,7 @@ INSERT INTO credential (id, login, password) VALUES
 (7, 'o432432432', '3fdzldsds');
 
 INSERT INTO user_account(nickname, name, surname, credential_id) VALUES
-('mtk', 'Pavlo', 'Arach', 2),
+('teddy', 'Danylo', 'Arach', 2),
 ('elena', 'Olena', 'Arach', 1),
 ('32Looo32', 'Igor', 'Rock', 5),
 ('krasava', 'Iryna', 'Pistun', 2);
